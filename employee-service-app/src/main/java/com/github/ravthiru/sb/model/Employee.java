@@ -3,7 +3,6 @@ package com.github.ravthiru.sb.model;
 
 public class Employee {
 
-
 	
 	private final String id;
 
