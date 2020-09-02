@@ -1,6 +1,6 @@
 *** Settings ***
 Library    String
-Library    REST		 http://localhost:8080	   ssl_verify=false
+Library    REST		 http://echo.jsontest.com	   ssl_verify=false
 
 
 *** Keywords ***
@@ -14,6 +14,7 @@ Set expectations
 *** Test Cases ***
 
 Get Employee
-  GET        employee/1001
-  String    response body id		1001
-  String    response body name          John Newman
+  GET       employee/1001
+  Output    response  body
+  String    response body employee	1001
+  
