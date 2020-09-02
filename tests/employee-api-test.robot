@@ -3,8 +3,6 @@ Library    String
 Library    REST		 http://echo.jsontest.com	   ssl_verify=false
 
 
-*** Keywords ***
-
 Set expectations
 
     Expect response         { "status": { "enum": [200, 201, 204, 400] } }
